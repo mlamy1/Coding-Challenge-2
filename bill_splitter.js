@@ -11,3 +11,16 @@ console.log(tip);
 
 var total = x + tip;
 console.log(`The bill was $${x}, the tip was $${tip}, and the total value is $${total}`);
+
+
+//Task 3: Create a Function
+
+
+function calculateTip(bill) {
+    return(bill >= 50 && bill <= 300) ? bill * .15 : bill * .20;
+}
+
+let bill = 100; 
+let newtip = calculateTip(bill);
+console.log (`The bill was $${bill}, the tip was $${newtip}, and the total value is $${bill + newtip}`)
+// This function accepts any bill amount as input and returns the calculated tip.  
